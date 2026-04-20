@@ -44,6 +44,13 @@ export default function Navbar() {
                 </Link>
               )
             })}
+            <a
+              href="/resume.pdf"
+              download
+              className="ml-2 px-3 py-1.5 border border-sky-400/30 text-sky-400 hover:border-sky-400/60 hover:bg-sky-400/[0.05] text-sm rounded font-mono transition duration-200"
+            >
+              cv.pdf
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

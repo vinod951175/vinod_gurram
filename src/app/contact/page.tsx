@@ -9,8 +9,8 @@ const contactInfo = [
 const socialLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/vinod-gurram-575227247/' },
   { label: 'Medium', href: 'https://medium.com/@vinodgurram50' },
-  { label: 'GitHub', href: 'https://github.com' },
-  { label: 'Hack The Box', href: 'https://www.hackthebox.com' },
+  { label: 'GitHub', href: 'https://github.com/vinod951175' },
+  { label: 'Hack The Box', href: null },
 ]
 
 const preferredChannels = [
@@ -46,18 +46,25 @@ export default function Contact() {
           <div className="bg-white/[0.02] border border-white/[0.07] rounded-lg p-4 md:col-span-2">
             <p className="text-xs text-slate-500 mb-3">Online Profiles</p>
             <div className="flex flex-wrap gap-4">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-slate-400 hover:text-sky-400 text-sm transition duration-200"
-                >
-                  <span className="text-sky-400">›</span>
-                  {link.label}
-                </a>
-              ))}
+              {socialLinks.map((link) =>
+                link.href ? (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-slate-400 hover:text-sky-400 text-sm transition duration-200"
+                  >
+                    <span className="text-sky-400">›</span>
+                    {link.label}
+                  </a>
+                ) : (
+                  <span key={link.label} className="flex items-center gap-2 text-slate-400 text-sm">
+                    <span className="text-sky-400">›</span>
+                    {link.label}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </div>

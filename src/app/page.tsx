@@ -21,16 +21,16 @@ export default function Home() {
             Identify and exploit system weaknesses, then translate findings into actionable defensive controls. Build SIEM-driven detections, automate remediation workflows, and strengthen security across cloud, network, and endpoint environments. Leverage machine learning–based anomaly detection and scripting to reduce response time and improve overall security posture.
           </p>
           <div className="max-w-xl bg-sky-400/[0.05] border border-sky-400/20 rounded-lg px-4 py-3 mb-8">
-            <p className="text-sky-400 text-xs font-mono mb-1">// open_offer.txt</p>
+            <p className="text-sky-400 text-xs font-mono mb-1">// ai_security_focus.txt</p>
             <p className="text-slate-300 text-sm leading-relaxed">
-              If you're a <span className="text-white font-medium">startup or small company</span>, I'll analyze your cloud or ML environment and improve your security posture — possibly for free. I'm looking to test and sharpen my skills on real-world systems.{' '}
+              Actively researching <span className="text-white font-medium">AI/ML security pipelines</span> — threat modeling prompt injection, model poisoning, and adversarial attacks on inference workflows. Open to short-term engagements with teams building LLM-powered products.{' '}
               <Link href="/contact" className="text-sky-400 hover:text-sky-300 transition duration-200 underline underline-offset-2">
                 Let's talk.
               </Link>
             </p>
           </div>
 
-          <div className="flex gap-3 mb-14">
+          <div className="flex flex-wrap gap-3 mb-14">
             <Link
               href="/projects"
               className="px-5 py-2.5 bg-sky-400 text-[#0a0a0a] font-mono font-medium text-sm rounded hover:bg-sky-300 transition duration-200"
@@ -43,6 +43,13 @@ export default function Home() {
             >
               ping vinod
             </Link>
+            <a
+              href="/resume.pdf"
+              download
+              className="px-5 py-2.5 border border-sky-400/30 text-sky-400 hover:border-sky-400/60 hover:bg-sky-400/[0.05] text-sm rounded font-mono transition duration-200"
+            >
+              ./download cv
+            </a>
           </div>
 
           <div className="grid grid-cols-3 gap-6 max-w-sm font-mono">
@@ -51,7 +58,7 @@ export default function Home() {
               <p className="text-slate-500 text-xs mt-0.5">--gpa=4.0</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-white">2+</p>
+              <p className="text-2xl font-bold text-white">3+</p>
               <p className="text-slate-500 text-xs mt-0.5">uptime --years</p>
             </div>
             <div>
@@ -84,7 +91,7 @@ export default function Home() {
             },
             {
               title: 'AI/ML Security',
-              desc: 'ML-based anomaly detection, threat prediction models, and securing AI pipelines against adversarial attacks.',
+              desc: 'Securing AI systems by attacking them — prompt injection, model backdoors, training data poisoning, model evasion, command injection in pipelines, supply chain attacks, and adversarial inputs on LLM inference flows.',
             },
             {
               title: 'Compliance & Auditing',

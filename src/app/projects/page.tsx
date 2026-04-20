@@ -37,7 +37,7 @@ const projects = [
 const labs = [
   {
     title: 'Hack The Box',
-    desc: 'Actively solving vulnerable machine challenges to enhance practical penetration testing and exploit development skills.',
+    desc: 'Actively solving vulnerable machine challenges to sharpen penetration testing, privilege escalation, and exploit development skills.',
     stat: '20+ Machines Solved',
   },
   {

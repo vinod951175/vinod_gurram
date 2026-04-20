@@ -18,6 +18,7 @@ const expertise = [
       'IAM privilege escalation detection',
       'VPC Flow Logs & CloudTrail analysis',
       'Container security (Docker/Kubernetes)',
+      'EKS cluster security & runtime threat detection',
       'WAF & Network Firewall configuration',
     ],
   },
@@ -32,13 +33,16 @@ const expertise = [
     ],
   },
   {
-    title: 'Analysis & Intelligence',
+    title: 'AI/ML Security',
     items: [
-      'MITRE ATT&CK mapping',
-      'Attack pattern analysis',
-      'Machine learning for anomaly detection',
-      'Vulnerability assessment & validation',
-      'Threat review & reporting',
+      'Prompt injection & jailbreak attacks',
+      'Model backdoors & trojan implants',
+      'Remote code execution via model serving',
+      'Command injection in AI pipelines',
+      'Training data & model poisoning',
+      'Model evasion & adversarial inputs',
+      'Supply chain attacks on ML dependencies',
+      'LLM pipeline & inference flow security',
     ],
   },
 ]
@@ -69,7 +73,7 @@ export default function About() {
         <p className="text-sky-400 text-sm font-mono mb-2">$ cat about.txt</p>
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">whoami</h1>
         <p className="text-slate-400 max-w-2xl font-mono text-sm">
-          <span className="text-slate-600">//</span> cybersecurity professional — threat detection, cloud security, incident response
+          <span className="text-slate-600">//</span> cybersecurity professional — threat detection, AWS cloud security, SOC operations, incident response, zero trust architecture, AI/ML security
         </p>
       </div>
 
@@ -79,7 +83,7 @@ export default function About() {
             I believe security is strongest when tested from an attacker's perspective. My journey into cybersecurity started with a passion for understanding how systems break and how to rebuild them stronger.
           </p>
           <p className="text-slate-300 text-sm leading-relaxed">
-            During my internship at CKoinect, I supported cloud security operations on AWS infrastructure, learning the fundamentals of threat detection and incident response at scale. This evolved into a full-time role as a Cloud Security Engineer where I built automation systems to correlate logs across CloudTrail, GuardDuty, and application telemetry, reducing mean time to triage by 30%.
+            During my internship at CKoinect, I supported cloud security operations on AWS infrastructure, gaining hands-on experience in threat detection and incident response at scale. This evolved into a full-time role as a Cloud Security Engineer, where I built automation pipelines to correlate logs across CloudTrail, GuardDuty, and application telemetry — reducing mean time to triage by 30%. I operated within a SOC environment leveraging CrowdStrike for endpoint detection and response, enforced least-privilege IAM policies to minimize the blast radius of potential compromises, hardened EKS cluster security posture, detected and contained data exfiltration attempts, and drove zero trust adoption across cloud workloads.
           </p>
           <p className="text-slate-300 text-sm leading-relaxed">
             As a Graduate Assistant at Montclair State University, I designed AI-driven cybersecurity labs for 50+ students, integrating machine learning models with network datasets. This reinforced my belief that the future of cybersecurity lies in automated threat detection and intelligent response systems.
